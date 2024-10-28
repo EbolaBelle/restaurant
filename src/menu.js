@@ -35,7 +35,7 @@ const  displayMenu = function(wrapper) {
     function populateMenuArray() {
         let newDish;
         for (let i = 0; i < dishNames.length; i++) {
-            newDish = createDishObject(dishNames[i], descriptions[i], prices[i], i)
+            newDish = createDishObject(dishNames[i], descriptions[i], prices[i], `dish${i}`)
             menuArray.push(newDish);
         }
     }
