@@ -1,10 +1,10 @@
 const  displayMenu = function(wrapper) {
     const menu = document.createElement('div');
     menu.classList.add('menu');
-    const descriptions = ["The Burrito Grande is a Tex Mex delight!", "Our regionally famous Margherita pizza will bring the whole family to tears.", "Bourbon slushie: need we say more?"];
-    const dishNames = ['Burrito Grande', 'Margherita', "Bourbon Slushie"];
-    const prices = [8, 18, 14];
-    let menuArray = [];    
+    const descriptions = ["The Burrito Grande is a Tex Mex delight!", "Our regionally famous Margherita pizza will bring the whole family to tears.", "Bourbon slushie: need we say more?", "The Pride of the Bunch!"];
+    const dishNames = ['Burrito Grande', 'Margherita', "Bourbon Slushie", "Grapes"];
+    const prices = [8, 18, 14, 250];
+    let menuArray = [];
 
     function createDishObject(name, description, price, id) {
         const dish = {
