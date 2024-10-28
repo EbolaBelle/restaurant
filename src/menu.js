@@ -2,8 +2,7 @@ const  displayMenu = function(wrapper) {
     const descriptions = ["The Burrito Grande is a Tex Mex delight!", "Our regionally famous Margherita pizza will bring the whole family to tears.", "Bourbon slushie: need we say more?"];
     const dishNames = ['Burrito Grande', 'Margherita', "Bourbon Slushie"];
     const prices = [8, 18, 14];
-    let menuArray = [];
-    
+    let menuArray = [];    
 
     function createDishObject(name, description, price, id) {
         const dish = {
