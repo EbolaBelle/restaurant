@@ -1,4 +1,6 @@
 const  displayMenu = function(wrapper) {
+    const menu = document.createElement('div');
+    menu.classList.add('menu');
     const descriptions = ["The Burrito Grande is a Tex Mex delight!", "Our regionally famous Margherita pizza will bring the whole family to tears.", "Bourbon slushie: need we say more?"];
     const dishNames = ['Burrito Grande', 'Margherita', "Bourbon Slushie"];
     const prices = [8, 18, 14];
@@ -26,7 +28,8 @@ const  displayMenu = function(wrapper) {
         const describe = document.createElement('p');
         describe.textContent = dish.description;
         card.appendChild(describe);
-        wrapper.appendChild(card);
+        card.classList.add('menu-card');
+        menu.appendChild(card);
     }
 
     function populateMenuArray() {
@@ -36,10 +39,11 @@ const  displayMenu = function(wrapper) {
             menuArray.push(newDish);
         }
     }
-    function assembleMenu() {
+    function assembleMenu() {        
         for (let i = 0; i < menuArray.length; i++) {
             createDishCard(menuArray[i]);
         }
+        wrapper.appendChild(menu);
     }
     populateMenuArray();
     assembleMenu();

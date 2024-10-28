@@ -4,6 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LouCorp Canteen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1610487512810-b614ad747572');
+            background-size: 100% 100%;
+        }
+        header {
+            background-color: rgb(187, 220, 223);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+        }
+
+        .body {
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            height: 90vh;
+        }
+
+        #content {
+            width: 90%;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: white;
+            height: 150px;
+            width: 250px;
+            text-align: center;
+            margin: 15px;
+            border: 5px double black;
+        }
+
+        .H1, .H3 {
+            position: relative;
+            top: 100px;
+            left: 10px;
+        }
+
+        .blurb {
+            font-size: x-large;
+            width: 40ch;
+            position: absolute;
+            bottom: 20%;
+            right: 10px;
+        }
+
+        .story-header {
+            /*position: absolute;
+            font-size: 50px;
+            top: 250px;
+            left: 200px;*/
+            font-size: 50px;
+            position: relative;
+            top: 100px;
+            left: 10px;
+        }
+
+        .story {
+            font-size: large;
+            width: 50ch;
+            position: absolute;
+            bottom: 20%;
+            right: 50px;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -13,8 +94,8 @@
             <button id="story">Our Story</button>
         </nav>
     </header>
-    <div id="content">
-        
+    <div class="body">
+        <div id="content"></div>
     </div>
 </body>
 </html>
